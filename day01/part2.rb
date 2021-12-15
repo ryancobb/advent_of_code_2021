@@ -1,5 +1,4 @@
 require 'csv'
-require 'pry'
 
 WINDOW_SIZE = 3
 
@@ -13,7 +12,6 @@ readings.each_index do |index|
 
   window_sums << window.sum
 end
-
 
 window_sums.each_with_index do |reading, index|
   next if window_sums[index + 1].nil?
